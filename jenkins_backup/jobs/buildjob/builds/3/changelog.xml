@@ -1,0 +1,11 @@
+commit c7230eb137ff421fbd15d29a9cc966f510d3be93
+tree c089ada8a45fdf5bb6b349ca7e36d16a92712783
+parent 439518b5808d02d10c7f5dbae4d371531b1347b0
+author Cloud User <ec2-user@ip-172-31-43-8.ap-south-1.compute.internal> 2019-07-14 11:02:51 +0000
+committer Cloud User <ec2-user@ip-172-31-43-8.ap-south-1.compute.internal> 2019-07-14 11:02:51 +0000
+
+    fact.c added
+
+
+
+:100644 100644 fb651ef812f38cc69609d8466e3767b34ec51195 64270bbc8f9edc699a502362986fc6fbb98b105f M	fact.c

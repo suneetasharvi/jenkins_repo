@@ -1,0 +1,33 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test2
+using credential 397b9873-ddf0-48d9-93de-333f619b9829
+Cloning the remote Git repository
+Cloning repository https://github.com/suneetasharvi/centralrepo.git
+ > git init /var/lib/jenkins/workspace/test2 # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/centralrepo.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/centralrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/suneetasharvi/centralrepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/suneetasharvi/centralrepo.git # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/centralrepo.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/centralrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6a8ed9c3e24d34a022e75f8438bc3e0466d1f104 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6a8ed9c3e24d34a022e75f8438bc3e0466d1f104
+Commit message: "Merge pull request #7 from suneetasharvi/branch3"
+First time build. Skipping changelog.
+[test2] $ /bin/sh -xe /tmp/jenkins5229120588782955233.sh
++ cd /var/lib/jenkins/workspace/test2
++ make
+gcc -c main.c 
+gcc -c palindrome.c
+gcc -c big3.c
+gcc -c reverse.c
+gcc -o  ABC.exe main.o  palindrome.o big3.o reverse.o
+Finished: SUCCESS

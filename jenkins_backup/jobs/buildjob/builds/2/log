@@ -1,0 +1,35 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/buildjob
+using credential 397b9873-ddf0-48d9-93de-333f619b9829
+Cloning the remote Git repository
+Cloning repository https://github.com/suneetasharvi/suneeta.git
+ > git init /var/lib/jenkins/workspace/buildjob # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/suneeta.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/suneeta.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/suneetasharvi/suneeta.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/suneetasharvi/suneeta.git # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/suneeta.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/suneeta.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 439518b5808d02d10c7f5dbae4d371531b1347b0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 439518b5808d02d10c7f5dbae4d371531b1347b0
+Commit message: "Merge pull request #2 from suneetasharvi/branch1"
+First time build. Skipping changelog.
+[buildjob] $ /bin/sh -xe /tmp/jenkins413824094664555360.sh
++ cd /var/lib/jenkins/workspace/buildjob
++ make
+gcc -c main.c
+gcc -c primenum.c
+gcc -c fact.c
+gcc -c fibonacci.c
+gcc -c sqcube.c
+gcc -o build.exe main.o primenum.o fact.o fibonacci.o sqcube.o
+Sending e-mails to: suneetag1989@gmail.com
+Finished: SUCCESS

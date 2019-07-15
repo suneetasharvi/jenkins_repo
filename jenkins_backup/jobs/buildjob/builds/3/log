@@ -1,0 +1,24 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/buildjob
+using credential 397b9873-ddf0-48d9-93de-333f619b9829
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/suneetasharvi/suneeta.git # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/suneeta.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/suneeta.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c7230eb137ff421fbd15d29a9cc966f510d3be93 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c7230eb137ff421fbd15d29a9cc966f510d3be93
+Commit message: "fact.c added"
+ > git rev-list --no-walk 439518b5808d02d10c7f5dbae4d371531b1347b0 # timeout=10
+[buildjob] $ /bin/sh -xe /tmp/jenkins1162215108223034361.sh
++ cd /var/lib/jenkins/workspace/buildjob
++ make
+gcc -c fact.c
+gcc -o build.exe main.o primenum.o fact.o fibonacci.o sqcube.o
+Finished: SUCCESS

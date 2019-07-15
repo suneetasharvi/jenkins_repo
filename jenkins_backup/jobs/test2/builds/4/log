@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/test2
+using credential 397b9873-ddf0-48d9-93de-333f619b9829
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/suneetasharvi/centralrepo.git # timeout=10
+Fetching upstream changes from https://github.com/suneetasharvi/centralrepo.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/suneetasharvi/centralrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1fdf35af82b3fba2124b81ddba6e5c1e1a5314b9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1fdf35af82b3fba2124b81ddba6e5c1e1a5314b9
+Commit message: "vinutha added"
+ > git rev-list --no-walk 84fef59acd56c9e6185fc2a122566bc0e1d3e0de # timeout=10
+[test2] $ /bin/sh -xe /tmp/jenkins6754530860009636321.sh
++ cd /var/lib/jenkins/workspace/test2
++ make
+make: `ABC.exe' is up to date.
+Finished: SUCCESS
